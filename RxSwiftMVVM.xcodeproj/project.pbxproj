@@ -13,6 +13,8 @@
 		75DF3B951F880AD50043E976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DF3B931F880AD50043E976 /* Main.storyboard */; };
 		75DF3B971F880AD50043E976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF3B961F880AD50043E976 /* Assets.xcassets */; };
 		75DF3B9A1F880AD50043E976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DF3B981F880AD50043E976 /* LaunchScreen.storyboard */; };
+		75DF3BA21F880CB50043E976 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF3BA11F880CB50043E976 /* ViewModel.swift */; };
+		75DF3BA41F880CC20043E976 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF3BA31F880CC20043E976 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		75DF3B961F880AD50043E976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DF3B991F880AD50043E976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75DF3B9B1F880AD50043E976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DF3BA11F880CB50043E976 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		75DF3BA31F880CC20043E976 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9B030BA61D9305CFCCC49C77 /* Pods-RxSwiftMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftMVVM/Pods-RxSwiftMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,8 @@
 			children = (
 				75DF3B8F1F880AD50043E976 /* AppDelegate.swift */,
 				75DF3B911F880AD50043E976 /* ViewController.swift */,
+				75DF3BA11F880CB50043E976 /* ViewModel.swift */,
+				75DF3BA31F880CC20043E976 /* API.swift */,
 				75DF3B931F880AD50043E976 /* Main.storyboard */,
 				75DF3B961F880AD50043E976 /* Assets.xcassets */,
 				75DF3B981F880AD50043E976 /* LaunchScreen.storyboard */,
@@ -228,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DF3B921F880AD50043E976 /* ViewController.swift in Sources */,
+				75DF3BA21F880CB50043E976 /* ViewModel.swift in Sources */,
+				75DF3BA41F880CC20043E976 /* API.swift in Sources */,
 				75DF3B901F880AD50043E976 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

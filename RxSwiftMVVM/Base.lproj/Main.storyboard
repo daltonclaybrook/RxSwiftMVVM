@@ -1,24 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mE2-pb-eyS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="lMm-bC-eQd">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="mE2-pb-eyS" customClass="ViewController" customModule="RxSwiftIssue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jjk-4j-oB0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5z-tm-KEF">
+                                <rect key="frame" x="16" y="20" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Cfo-Cf-QTa">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvj-9j-kW7">
+                                <rect key="frame" x="151" y="617" width="73" height="30"/>
+                                <state key="normal" title="Get Emails"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="t5z-tm-KEF" firstAttribute="top" secondItem="8WH-07-xkh" secondAttribute="top" id="03n-d5-ent"/>
+                            <constraint firstItem="rvj-9j-kW7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="t5z-tm-KEF" secondAttribute="bottom" constant="8" id="06b-t0-3Y1"/>
+                            <constraint firstItem="8WH-07-xkh" firstAttribute="trailing" secondItem="t5z-tm-KEF" secondAttribute="trailing" constant="16" id="BSv-Bl-r4M"/>
+                            <constraint firstItem="Cfo-Cf-QTa" firstAttribute="centerY" secondItem="Jjk-4j-oB0" secondAttribute="centerY" id="Km9-uh-Pg5"/>
+                            <constraint firstItem="rvj-9j-kW7" firstAttribute="centerX" secondItem="Jjk-4j-oB0" secondAttribute="centerX" id="LsR-5T-SD7"/>
+                            <constraint firstItem="t5z-tm-KEF" firstAttribute="leading" secondItem="8WH-07-xkh" secondAttribute="leading" constant="16" id="gIX-r2-zyJ"/>
+                            <constraint firstItem="8WH-07-xkh" firstAttribute="bottom" secondItem="rvj-9j-kW7" secondAttribute="bottom" constant="20" id="k4F-pe-AUS"/>
+                            <constraint firstItem="Cfo-Cf-QTa" firstAttribute="centerX" secondItem="Jjk-4j-oB0" secondAttribute="centerX" id="kKP-51-npu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8WH-07-xkh"/>
                     </view>
+                    <connections>
+                        <outlet property="emailsLabel" destination="t5z-tm-KEF" id="LRZ-BL-EPd"/>
+                        <outlet property="getCommentsButton" destination="rvj-9j-kW7" id="dQO-19-wqI"/>
+                        <outlet property="loadingView" destination="Cfo-Cf-QTa" id="V0a-Vz-7nv"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfX-wv-gMx" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
